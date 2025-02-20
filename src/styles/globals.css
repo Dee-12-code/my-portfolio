@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@keyframes glitch {
+  0% { text-shadow: 2px 2px red, -2px -2px cyan; }
+  20% { text-shadow: -2px -2px red, 2px 2px cyan; }
+  40% { text-shadow: 2px -2px red, -2px 2px cyan; }
+  60% { text-shadow: -2px 2px red, 2px -2px cyan; }
+  80% { text-shadow: 2px 2px red, -2px -2px cyan; }
+  100% { text-shadow: none; }
+}
+
+.animate-glitch {
+  animation: glitch 0.3s infinite alternate;
+}
+@keyframes backgroundMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.bg-animated {
+  background: linear-gradient(-45deg, #1a1a1a, #000, #222, #111);
+  background-size: 400% 400%;
+  animation: backgroundMove 10s ease infinite;
+}
+@keyframes neon-glow {
+  0% { box-shadow: 0 0 10px #0ff; }
+  50% { box-shadow: 0 0 20px #0ff, 0 0 30px #0ff; }
+  100% { box-shadow: 0 0 10px #0ff; }
+}
+
+.neon-hover {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.neon-hover:hover {
+  animation: neon-glow 0.8s infinite alternate;
+  color: #0ff;
+}
