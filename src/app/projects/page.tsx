@@ -26,7 +26,7 @@ export default function Projects() {
             </Sphere>
           </Canvas>
           
-          <span className="absolute text-white font-bold text-xl">Coming Soon...</span>
+          <span className="absolute text-white font-bold text-xl">Coming Soon 🔥🔥...</span>
         </motion.div>
       </div>
       
