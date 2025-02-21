@@ -22,7 +22,7 @@ export default function Contact() {
 
       {/* Subtext */}
       <motion.p
-        className="text-gray-300 mb-6 text-lg"
+        className="text-gray-300 mb-6 text-lg z-10"
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.4 }}
