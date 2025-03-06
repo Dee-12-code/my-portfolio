@@ -50,6 +50,25 @@ export default function About() {
           boundaries of design and functionality, combining cutting-edge
           technologies with seamless user interactions.
         </motion.p>
+
+        {/* Certifications Section */}
+        <motion.div
+          className="mt-12 w-full max-w-2xl text-left"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.8 }}
+        >
+          <h2 className="text-3xl font-semibold text-cyan-400 mb-4 text-center">
+            Certifications
+          </h2>
+          <ul className="list-disc list-inside text-gray-300 text-lg space-y-2">
+            <li>Responsive Web Design - freeCodeCamp</li>
+            <li>JavaScript Algorithms and Data Structures - freeCodeCamp</li>
+            <li>Front End Development Libraries - freeCodeCamp</li>
+            <li>Front-end Development - Axia Africa</li>
+            <li>Hewlett Packard Enterprise Software Engineering Job Simulation - Forage</li>
+          </ul>
+        </motion.div>
       </motion.div>
     </PageWrapper>
   );
