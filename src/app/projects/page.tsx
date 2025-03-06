@@ -7,6 +7,7 @@ const projects = [
   { title: "Ed-Circle", link: "https://dee-12-code.github.io/Ed-Circle/" },
   { title: "AI-Powered Personal Finance Tracker", link: "https://dee-12-code.github.io/-AI-Powered-Personal-Finance-Tracker/" },
   { title: "Markdown Previewer", link: "https://dee-12-code.github.io/markdown-previewer" },
+  { title: "Task Manager", link: "https://task-manager-rouge-delta.vercel.app/"},
   { title: "Quote-machine", link: "https://dee-12-code.github.io/quote-machine/" },
   { title: "Elite Consulting", link: "https://dee-12-code.github.io/Elite-Consulting/" },
   { title: "roman-converter", link: "https://dee-12-code.github.io/roman-converter/" },
