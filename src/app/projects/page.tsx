@@ -4,12 +4,12 @@ import { Canvas } from "@react-three/fiber";
 import { MeshDistortMaterial, Sphere } from "@react-three/drei";
 
 const projects = [
+  { title: "Ed-Circle", link: "https://dee-12-code.github.io/Ed-Circle/" },
   { title: "AI-Powered Personal Finance Tracker", link: "https://dee-12-code.github.io/-AI-Powered-Personal-Finance-Tracker/" },
   { title: "Markdown Previewer", link: "https://dee-12-code.github.io/markdown-previewer" },
   { title: "Quote-machine", link: "https://dee-12-code.github.io/quote-machine/" },
-  { title: "Interactive Resume builder", link: "https://dee-12-code.github.io/resume-builder" },
+  { title: "Elite Consulting", link: "https://dee-12-code.github.io/Elite-Consulting/" },
   { title: "roman-converter", link: "https://dee-12-code.github.io/roman-converter/" },
-  { title: "Task Manager App", link: "https://dee-12-code.github.io/task-manager" },
 ];
 
 export default function Projects() {
