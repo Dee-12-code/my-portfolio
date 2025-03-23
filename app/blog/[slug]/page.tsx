@@ -7,8 +7,17 @@ import ReactMarkdown from "react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
+// Blog Post Type
+interface BlogPost {
+  title: string;
+  description: string;
+  content: string;
+  date: string;
+  slug: string;
+}
+
 // Sample blog data
-const blogs = [
+const blogs: BlogPost[] = [
   {
     title: "Mastering React 19 & Next.js 15",
     description: "Explore the latest features and optimizations in React 19 and Next.js 15.",
@@ -101,7 +110,7 @@ const user1 = createUser("Alice", "Admin");
 export default function BlogPost() {
   const router = useRouter();
   const params = useParams();
-  const [blog, setBlog] = useState<any>(null);
+  const [blog, setBlog] = useState<BlogPost | null>(null);
 
   useEffect(() => {
     if (params?.slug) {
@@ -166,7 +175,7 @@ export default function BlogPost() {
         >
           <ReactMarkdown
             components={{
-              code({ node, className, children, ...props }) {
+              code({ className, children, ...props }) {
                 const match = /language-(\w+)/.exec(className || "");
 
                 return match ? (
